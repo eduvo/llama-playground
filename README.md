@@ -16,12 +16,12 @@ For example, to download https://huggingface.co/TheBloke/Llama-2-7B-GGML:
 huggingface-cli download TheBloke/Llama-2-7B-GGUF llama-2-7b.Q4_K_M.gguf --local-dir models/ --local-dir-use-symlinks False
 ```
 
-2. Run llama with a prompt
+2. Start a conversation in command line
 ```shell
-llama -m models/llama-2-7b.Q4_K_M.gguf --color -p "Hello world!\n" -n 50 -e --log-disable
+llama -m models/llama-2-7b.Q4_K_M.gguf --color -cnv
 ```
 
-3. Run llama-server and visit http://localhost:8080
+3. Start a web server at http://localhost:8080
 ```shell
 llama-server -m models/llama-2-7b.Q4_K_M.gguf
 ```
