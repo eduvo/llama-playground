@@ -1,0 +1,4 @@
+/.direnv/
+/models/*
+!/models/.gitkeep
+*.log
